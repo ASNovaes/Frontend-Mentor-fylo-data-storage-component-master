@@ -1,0 +1,19 @@
+.set-icons {
+  display: flex;
+  a {
+    align-items: center;
+
+    background: $bg-icon-veryDarkBlue;
+    border-radius: 10px;
+
+    display: flex;
+
+    height: 50px;
+
+    justify-content: center;
+
+    margin-right: 16px;
+
+    width: 50px;
+  }
+}

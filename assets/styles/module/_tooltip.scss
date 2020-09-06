@@ -1,0 +1,56 @@
+.card__status-localstorage > span {
+    background: #fff;
+    border-radius: 10px;
+  
+    height: 75px;
+  
+    position: absolute;
+    left: 71px;
+    bottom: -32px;
+  
+    width: 184px;
+  
+    @extend .flex-center;
+  
+    @media (min-width: 992px) {
+      left: unset;
+      right: 40px;
+      top: -50px;
+      z-index: 2;
+  
+      ::after {
+        content: '';
+        background: #fff;
+  
+        bottom: 0px;
+        position: absolute;
+        right: 0px;
+  
+        transform: skewY(45deg);
+  
+        z-index: -1;
+  
+        @include square(40px);
+      }
+    }
+  
+    p {
+      color: #000;
+      font-size: 3.3rem;
+  
+      @extend %font-bold;
+    }
+  
+    span {
+      color: $grayishBlue;
+      font: {
+        size: 14px;
+      }
+  
+      margin-left: 10px;
+  
+      @extend %font-bold;
+      @extend %uppercase;
+    }
+  }
+  

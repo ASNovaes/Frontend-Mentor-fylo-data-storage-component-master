@@ -1,0 +1,24 @@
+main {
+  background-image: url('../images/bg-mobile.png');
+  background: {
+    color: $veryDarkBlue;
+    repeat: no-repeat;
+    position: bottom left;
+    size: 100%;
+  }
+
+  align-items: center;
+
+  color: $paleBlue;
+
+  display: flex;
+  
+  justify-content: center;
+
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    background-image: url('../images/bg-desktop.png');
+  }
+}
